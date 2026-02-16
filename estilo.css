@@ -127,8 +127,14 @@ img {
 /* ===== PROGRAMAÇÃO ===== */
 
 .programacao {
-  padding: 6rem 0;
-  background: linear-gradient(180deg, #fff1f2, #ffffff);
+  padding: 6rem 0 5rem;
+  background: linear-gradient(
+    to right,
+    #fff1f2 0%,
+    #fff1f2 40%,
+    #ffe4e6 55%,
+    #fff1f2 100%
+  );
 }
 
 .section-header {
@@ -209,8 +215,9 @@ img {
   opacity: 0.6;
 }
 
-/* ===== INSCRIÇÃO ===== */
-.inscricao {
+/* ===== PALESTRANTES ===== */
+
+.palestrantes {
   padding: 6rem 0 5rem;
   background: linear-gradient(
     to right,
@@ -219,6 +226,84 @@ img {
     #ffe4e6 55%,
     #fff1f2 100%
   );
+  text-align: center;
+}
+
+.palestrantes-grid {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.palestrantes-card {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.palestrantes-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2rem;
+  border: 8px solid rgba(255, 255, 255, 0.6);
+  margin: 0 auto 1rem;
+  box-shadow: 0 30px 60px rgba(225, 29, 72, 0.25);
+
+}
+
+.palestrantes-box {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 1rem;
+  background: white;
+  padding: 2rem;
+  border: 1px solid #fecdd3;
+  border-radius: 2rem;
+  gap: 1.5rem;
+  box-shadow: 0 30px 60px rgba(225, 29, 72, 0.25);
+}
+
+@media (max-width: 768px) {
+  .palestrantes-card {
+    grid-template-columns: 1fr; 
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .palestrantes-card img {
+    max-width: 200px;
+    height: 200px;
+  }
+}
+
+.palestrantes h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #be123c, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.palestrantes p {
+  color: rgba(76, 5, 25, 0.7);
+}
+
+.palestrantes h3 {
+  color: rgba(76, 5, 25, 0.7);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 1rem;
+
+}
+
+/* ===== INSCRIÇÃO ===== */
+.inscricao {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #fff1f2, #ffffff);
   text-align: center;
 }
 
@@ -278,8 +363,14 @@ img {
 
 /* ===== ORGANIZAÇÃO ===== */
 .organizacao {
-  padding: 6rem 0;
-  background: linear-gradient(180deg, #fff1f2, #ffffff);
+  padding: 6rem 0 5rem;
+  background: linear-gradient(
+    to right,
+    #fff1f2 0%,
+    #fff1f2 40%,
+    #ffe4e6 55%,
+    #fff1f2 100%
+  );
   text-align: center;
 }
 
