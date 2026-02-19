@@ -57,6 +57,46 @@ img {
   color: #e11d48;
 }
 
+.estado-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  gap: 5px;
+}
+
+.barra {
+  width: 25px;
+  height: 3px;
+  background-color: #be123c;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .estado-menu {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff1f2;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 2rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 /* ===== INICIO ===== */
 .inicio {
   padding: 6rem 0 5rem;
@@ -412,8 +452,8 @@ margin: 0 auto;
 }
 
 .organizacao-card.destaque img {
-  max-width: 160%;
-  max-height: 160%;
+  max-width: 95%;
+  max-height: 95%;
 }
 
 .organizacao-card img {

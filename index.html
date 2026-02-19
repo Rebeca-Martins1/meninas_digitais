@@ -14,6 +14,12 @@
   <div class="container nav-content">
     <img src="imagens/logosemfundo.png" alt="Logo do evento" class="logo-img">
 
+    <button id="menu-mobile" class="estado-menu">
+      <span class="barra"></span>
+      <span class="barra"></span>
+      <span class="barra"></span>
+    </button>
+
     <nav class="nav-links">
       <a href="#inicio">Início</a>
       <a href="#objetivo">Objetivo</a>
@@ -276,6 +282,21 @@
       </div>
 
       <div class="palestrantes-card">
+        <img src="imagens/Cintia.jpg" alt="Cintia">
+
+        <div class="palestrantes-box">
+          <h3>Cintia Esteves</h3>
+          <p>Profissional de tecnologia com mais de 30 anos de experiência. Bacharel em Informática 
+            pela UFJF, com especialização em Gestão de Pessoas pelo SENAC-SP, especialização em 
+            Proteção de Dados pela FGV-RJ, MBA em Big Data, Ciência de Dados e Inteligência Artificial
+            pela PUC-RS e cursando MBA em Neurociência na PUC-RS. Como mentora e palestrante, 
+            compartilho minha experiência adquirida ao longo da minha carreira em empresas tais como: 
+            Nestlé, Avon, Telefônica|Vivo, Zurich Seguradora, Grupo Carrefour e Nubank.</p>
+        </div>
+
+      </div>
+
+      <div class="palestrantes-card">
         <img src="imagens/Daniele_Magalhaes.jpg" alt="Daniele">
 
         <div class="palestrantes-box">
@@ -294,6 +315,24 @@
             no Instituto Federal de Minas Gerais (IFMG), Campus Ouro Preto. Foi tutora EAD no curso 
             de Licenciatura em Matemática a distância da UFJF. Está fazendo parte do Grupo de Pesquisa
             "Análise e Modelagem de Dados Educacionais (GrAMDE)", certificado pelo CNPq.</p>
+        </div>
+
+      </div>
+
+      <div class="palestrantes-card">
+        <img src="imagens/Tatiane.jpg" alt="Tatiane">
+
+        <div class="palestrantes-box">
+          <h3>Tatiane Ornelas Martins Alves</h3>
+          <p>Tatiane Ornelas Martins Alves é doutoranda em Informática pela Pontifícia Universidade 
+            Católica do Rio de Janeiro (PUC-Rio), onde desenvolve pesquisas sobre o uso de Large 
+            Language Models (LLMs) no apoio à análise qualitativa em Engenharia de Software. É 
+            Analista de Tecnologia da Informação na Universidade Federal de Juiz de Fora (UFJF) 
+            e Assessora Acadêmica e de Extensão na Faculdade Metodista Granbery, atuando na gestão 
+            acadêmica, coordenação de projetos e formação em cursos da área de tecnologia. Sua 
+            experiência integra tecnologia, pesquisa aplicada e educação, com atuação em projetos 
+            que conectam inovação, metodologias científicas e transformação digital no contexto 
+            acadêmico.</p>
         </div>
 
       </div>
@@ -379,11 +418,11 @@
 
       <div class="organizacao-grid">
         <div class="organizacao-card destaque">
-          <img src="imagens/moment1.png" alt="Patrocinador 1">
+          <img src="imagens/logo_levty.png" alt="Patrocinador 1">
         </div>
 
         <div class="organizacao-card">
-          <img src="imagens/moment2.png" alt="Patrocinador 2">
+          <img src="imagens/logo_sydle.png" alt="Patrocinador 2">
         </div>
       </div>
 
@@ -438,6 +477,13 @@
   </div>
   </footer>
 
+  <script>
+    const menuBtn = document.querySelector('#menu-mobile');
+    const navLinks = document.querySelector('.nav-links');
 
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
