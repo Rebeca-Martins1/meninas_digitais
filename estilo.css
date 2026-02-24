@@ -258,16 +258,11 @@ img {
 /* ===== PALESTRANTES ===== */
 
 .palestrantes {
-  padding: 6rem 0 5rem;
-  background: linear-gradient(
-    to right,
-    #fff1f2 0%,
-    #fff1f2 40%,
-    #ffe4e6 55%,
-    #fff1f2 100%
-  );
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #fff1f2, #ffffff);
   text-align: center;
 }
+
 
 .palestrantes-grid {
 max-width: 1200px;
@@ -338,6 +333,58 @@ margin: 0 auto;
   font-weight: 800;
   margin: 0 auto 1rem;
 
+}
+
+/* ===== MEDIADORAS ===== */
+.mediadoras {
+  padding: 6rem 0 5rem;
+  background: linear-gradient(
+    to right,
+    #fff1f2 0%,
+    #fff1f2 40%,
+    #ffe4e6 55%,
+    #fff1f2 100%
+  );
+  text-align: center;
+}
+
+.mediadoras h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #be123c, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mediadoras-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.mediadoras-card {
+  flex: 0 1 calc(33.33% - 2rem);
+  min-width: 250px;
+  text-align: center;
+}
+
+.mediadoras-card img {
+  width: 100%;
+  max-width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 2rem;
+  border: 8px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 30px 60px rgba(225, 29, 72, 0.25);
+  margin: 0 auto 1rem;
+}
+
+@media (max-width: 768px) {
+  .mediadoras-card {
+    flex: 0 1 100%;
+  }
 }
 
 /* ===== INSCRIÇÃO ===== */
@@ -582,4 +629,16 @@ margin: 0 auto;
 .newsletter {
   display: flex;
   gap: 0.5rem;
+}
+
+.footer-copyright {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer-copyright p {
+  color: white;
+  font-size: 1.1rem;
+  opacity: 0.8;
 }

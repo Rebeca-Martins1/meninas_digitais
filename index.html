@@ -25,7 +25,8 @@
       <a href="#inicio">Início</a>
       <a href="#objetivo">Objetivo</a>
       <a href="#programacao">Programação</a>
-      <a href="#palestrantes">Palestrantes</a>   
+      <a href="#palestrantes">Palestrantes</a> 
+      <a href="#mediadoras">Mediadoras</a>  
       <a href="#inscricao">Inscrição</a>
       <a href="#organizacao">Organização</a>     
     </nav>
@@ -195,7 +196,7 @@
             <div class="oficina">
               <h4>1. Como pensa um Computador?</h4>
               <p>Projeto: Meninas Digitais UFJF</p>
-              <p>Mediadoras: Julia Campos e Geisielen Gomes</p>
+              <p>Mediadoras: Julia Campos, Geisielen Gomes e Isabela Gomes</p>
             </div>
             
             <div class="oficina">
@@ -207,11 +208,13 @@
             <div class="oficina">
               <h4>3. Construindo seu primeiro programa em Python: Pedra, Papel e Tesoura</h4>
               <p>Projeto: Meninas Programadoras JF</p>
-              <p>Mediadora: Larissa Ferreira Machado (Sistemas de Informação)</p>
+              <p>Mediadora: Larissa Machado e Isadora de Souza</p>
             </div>
 
             <div class="oficina">
-              <h4>4. UFSJ</h4>
+              <h4>4. Criando seu Jogo com Scratch </h4>
+              <p>Projeto: Meninas Digitais UFSJ</p>
+              <p>Mediadoras: Isadora Sidnei e Marcelly Gabarrona</p>
             </div>
 
           </div>
@@ -357,6 +360,57 @@
   </div>
 </section>
 
+<!-- MEDIADORAS -->
+ <section id="mediadoras" class="mediadoras">
+  <div class="container">
+    <h2>Mediadoras</h2>
+    <div class="mediadoras-grid">
+      <div class="mediadoras-card">
+        <img src="imagens/Oficina 01 - Julia Campos.jpg" alt="Julia">
+        <h3>Julia Campos</h3>
+      </div>
+
+      <div class="mediadoras-card">
+        <img src="imagens/Oficina 01 - Geisielen Gomes.jpg" alt="Geisielen">
+        <h3>Geisielen Gomes</h3>
+      </div>
+
+      <div class="mediadoras-card">
+        <img src="imagens/Oficina 02 - Eduarda Miguel.jpg" alt="Eduarda">
+        <h3>Eduarda Miguel</h3>
+      </div>
+
+      <div class="mediadoras-card">
+        <img src="imagens/Oficina 02 - Mell Feital.jpg" alt="Mell">
+        <h3>Mell Feital</h3>
+      </div>
+
+      <div class="mediadoras-card">
+        <img src="imagens/Oficina 03 - Larisa Ferreira Machado.jpg" alt="Larissa">
+        <h3>Larissa Machado</h3>
+      </div>
+
+      <div class="mediadoras-card">
+        <img src="imagens/Oficina 03 - Isadora de Souza.jpg" alt="Isadora">
+        <h3>Isadora de Souza</h3>
+      </div>
+
+      <div class="mediadoras-card">
+        <img src="imagens/isadora_sidnei.jpg" alt="Isadora">
+        <h3>Isadora Sidnei</h3>
+      </div>
+
+      <div class="mediadoras-card">
+        <img src="imagens/marcelly_gabarrona.jpg" alt="Marcelly">
+        <h3>Marcelly Gabarrona</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+ </section>
+
 <!-- INSCRIÇÃO -->
 <section id="inscricao" class="inscricao">
   <div class="container">
@@ -383,20 +437,10 @@
 
       <div class="passo">
         <p>
-          O evento contará com a inscrição de trabalhos, com o objetivo de valorizar e divulgar ações e
-          projetos desenvolvidos por alunas, docentes e equipes vinculadas a iniciativas que promovem
-          a participação de meninas e mulheres nas áreas de ciência, tecnologia, engenharia e
-          matemática (STEM).
-          Serão aceitos artigos curtos de projetos de ensino, pesquisa e extensão, relatos de
-          experiências, iniciativas de inclusão e equidade de gênero nas exatas. As propostas
-          submetidas passarão por processo de avaliação pela comissão científica, sendo selecionados
-          até 20 trabalhos para apresentação.
-          A apresentação ocorrerá no formato de sessão de pôsteres durante o evento, com espaço
-          reservado para exposição e interação entre autoras, participantes e convidados.
-          Considerando o alcance regional do projeto Meninas Digitais, espera-se receber inscrições de
-          trabalhos oriundos de cursos técnicos e superiores de diferentes instituições da região.
-          A submissão será gratuita e deverá seguir as orientações a serem divulgadas nos veículos
-          oficiais do evento.
+          Sessão de pôsteres com resumos expandidos de iniciativas que promovem a participação de meninas e mulheres em STEM, apresentados no evento. <br><br>
+          <strong>Datas importantes:</strong><br>
+          Data limite para submissão de artigos: 02 de março de 2026 <br>
+          Notificação dos trabalhos aceitos: 13 de março  de 2026
       </p>
       </div>
       
@@ -524,6 +568,14 @@
       <a>Levty</a>
     </div>
 
+    </div>
+
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">
+      <p>&copy; <span id="ano-atual"></span> Meninas Digitais UFSJ.</p>
+    </div>
   </div>
   </footer>
 
@@ -534,6 +586,8 @@
     menuBtn.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
+
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
